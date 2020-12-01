@@ -1,0 +1,1199 @@
+# portfolio01
+/*ヘッダーデザインここから*/
+
+#inner_hiden_title {
+    display: none;
+}
+
+.header-img {
+    width: 100%;
+    height: 650px;
+}
+
+.img01 {
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    border-bottom: 1px solid #DDDDDD;
+    display: flex;
+    justify-content: space-between;
+    line-height: 4em;
+    z-index: 100;
+}
+
+#header_left {
+    padding-top: 4px;
+    display: flex;
+    flex-direction: row;
+}
+
+#header_logo {
+    padding: 0;
+    margin: 0 1em;
+}
+
+#header_logo a {
+    color: #339966;
+}
+
+#header_logo .fa-atlassian::before {
+    font-size: 2rem;
+    color: #339966;
+    content: '\f77b';
+    /*これがあるとなぜか表示されない
+    font-family: "Font Awesome 5 Free";*/
+    font-weight: 900;
+}
+
+#header_list ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+#header_list li {
+    margin: 0 1em;
+    list-style: none;
+    font-weight: bold;
+}
+
+#this_page {
+    color: #339966;
+    margin: 0;
+    border-bottom: 2px solid #339966;
+}
+
+.ather_page a {
+    color: #666666;
+}
+
+.ather_page a:hover {
+    border-bottom: #666666;
+}
+
+#header_right {
+    margin: auto 8em auto 0;
+}
+
+#start_airbnb {
+    color: white;
+    background-color: #FF0000;
+    border-radius: 5px;
+    height: 2em;
+    font-weight: bold;
+    border: none;
+}
+
+#start_airbnb:active {
+    background-color: #A52A2A;
+}
+
+button:focus {
+    outline: none;
+}
+
+.addBorder {
+    display: inline-block;
+    padding: 3px;
+    margin: 0;
+    line-height: normal;
+    /*transparentでボーダー分を透明に*/
+    border: transparent 1px solid;
+}
+
+.addBorder:active {
+    border: solid 1px #000;
+    /*外側の線になる一本線の枠線をひく*/
+    /*outline-offset: 3px;         外側の線と内側の線の空き具合を調整*/
+    /*margin: 2px;            	 外側の線を広げた分、要素の大きさを調整する*/
+    border-radius: 5px;
+}
+
+#start_airbnb p {
+    margin: auto;
+    line-height: 1em;
+}
+
+/*applicationここから*/
+
+.application {
+    border-radius: 4px;
+    background-color: white;
+    padding: 30px;
+    width: 480px;
+    position: absolute;
+    top: 150px;
+    right: 100px;
+}
+
+.application h1 {
+    margin: 0 0 30px 0;
+    font-weight: bold;
+    text-align: left;
+}
+
+#hiden_title {
+    display: none;
+}
+
+.application p {
+    font-weight: bold;
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.application input {
+    border: 1px solid #DDDDDD;
+    border-radius: 3px;
+    width: 100%;
+    font-size: 15px;
+    height: 50px;
+    padding-left: 1em;
+    margin: 5px 5px 5px 0;
+}
+
+.application select {
+    border: 1px solid #DDDDDD;
+    border-radius: 3px;
+    height: 50px;
+    font-size: 15px;
+    padding-left: 1em;
+}
+
+#details {
+    display: flex;
+    flex-direction: row;
+    margin-right: 10px;
+    width: 100%;
+}
+
+#select_share {
+    margin: 5px 10px 5px 0;
+    width: 60%;
+}
+
+#select_guest_number {
+    width: 40%;
+    margin: 5px 0;
+}
+
+.application input:focus, .application select:focus {
+    border: 1px solid #339966;
+    outline: 0;
+}
+
+#send-form-button {
+    width: 100%;
+    background-color: #FF4F50;
+    color: white;
+    border: none;
+    margin: 0;
+    padding: 0;
+    border-radius: 5px;
+    line-height: 50px;
+    font-size: 15px;
+}
+
+#send-form-button:active {
+    background-color: red;
+}
+
+/*applicationここまで*/
+
+/*ヘッダーデザインここまで*/
+
+/*メイン(main)ここから*/
+
+main {
+    width: 1050px;
+    margin: 0 auto;
+}
+
+/*イントロダクション(main)ここから*/
+
+#introduction {
+    display: flex;
+    flex-direction: row;
+}
+
+.inner_intro {
+    width: 100%;
+    margin: 30px auto;
+    color: #444444;
+}
+
+.inner_intro h1 {
+    line-height: 50px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.inner_intro p {
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.inner_intro:last-child {
+    margin-left: 50px;
+}
+
+/*イントロダクション(main)ここまで*/
+
+/*メインコンテンツ(main)ここから*/
+
+.main_contents {
+    padding: 100px 0;
+}
+
+.main_contents h1 {
+    font-weight: bold;
+    text-align: center;
+    font-size: 55px;
+    padding: 15px 0;
+    /*line-height: 85px;
+    border-top: 3px solid #999999;*/
+    position: relative;
+}
+
+/*以下で線を表示*/
+
+.main_contents h1::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: -10px;
+    display: inline-block;
+    width: 60px;
+    height: 2px;
+    -webkit-transform: tarnslateX(-50%);
+    transform: translateX(-50%);
+    background-color: #999999;
+    /*線の色*/
+    border-radius: 2px;
+}
+
+.elements {
+    color: #444444;
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+.elements h2 {
+    /*padding: 20px 0;*/
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.elements p {
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.elements a {
+    text-decoration: none;
+    color: #339966;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.elements a:hover {
+    border-bottom: 1px solid #339966;
+}
+
+/*3ステップで簡単ホスティング(main)ここから*/
+
+.check_point .fa-check::before {
+    color: #444444;
+    content: '\f00c';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+.check_point .fa-check {
+    border: 1.5px solid #444444;
+    padding: 17px 15px;
+    border-radius: 50%;
+}
+
+.check_point {
+    width: 30%;
+    margin: 0 auto;
+}
+
+.check_point:first-child, .check_point:last-child {
+    margin: 0;
+}
+
+/*3ステップで簡単ホスティング(main)ここまで*/
+
+/*安全保障(main)ここから*/
+
+#step02 .elements {
+    align-items: flex-end;
+}
+
+.step02_inner {
+    width: 50%;
+}
+
+.step02_inner p {
+    font-size: 16px;
+    line-height: 30px;
+}
+
+#guarantee_list .fa-check::before {
+    color: #339966;
+    content: '\f00c';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+#guarantee_list .fa-check {
+    margin: 8px 0;
+}
+
+#guarantee_list li {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+#guarantee_list p {
+    padding-left: 16px;
+}
+
+/*安全保障(main)ここまで*/
+
+/*数字(main)ここから*/
+
+.number_elements {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.number {
+    width: 30%;
+}
+
+.number_elements h2 {
+    font-size: 55px;
+}
+
+.number_elements p {
+    font-size: 15px;
+    line-height: 25px;
+}
+
+/*数字(main)ここまで*/
+
+/*Airbnbについて(main)ここから*/
+
+.about_airbnb {
+    width: 50%;
+}
+
+.about_airbnb+.about_airbnb {
+    margin-left: 60px;
+}
+
+/*Airbnbについて(main)ここまで*/
+
+/*インタビュー(main)ここから*/
+
+.interview_img {
+    background-image: no-repeat center;
+    background-size: cover;
+    background-clip: content-box;
+    width: 50%;
+    height: 500px;
+}
+
+.coment {
+    text-align: left;
+    width: 450px;
+}
+
+.font_yellow {
+    margin: 0;
+    display: inline-block;
+    font-family: 'Sawarabi Mincho', sans-serif;
+    color: #FFD700;
+    font-size: 60px;
+    line-height: 60%;
+}
+
+.inner_coment p {
+    font-size: 30px;
+}
+
+.inner_coment span {
+    font-size: 15px;
+    color: #999999;
+}
+
+.inner_coment button {
+    margin: 20px 0;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 4px;
+    padding: 10px 15px;
+    font-weight: bold;
+}
+
+#img02 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#interview01 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+#img03 {
+    background-image: no-repeat center;
+    background-size: cover;
+    background-clip: content-box;
+    width: 100%;
+    height: 100%;
+}
+
+#interview02 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#img04 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*インタビュー(main)ここまで*/
+
+/*よくある質問(main)ここから*/
+
+#question_list {
+    padding-left: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#question_list li {
+    width: 48%;
+    margin: 0 auto;
+    list-style: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #DDDDDD;
+}
+
+#question_list a {
+    text-decoration: none;
+    color: #339966;
+    font-size: 18px;
+}
+
+/*よくある質問(main)ここまで*/
+
+/*メインコンテンツ(main)ここまで*/
+
+/*ホスティング詳細(main)ここから*/
+
+#hosting_plan {
+    padding: 0 0 100px 0;
+}
+
+#hosting_plan h1 {
+    font-weight: bold;
+    font-size: 25px;
+    color: #444444;
+}
+
+#row_hosting_plan {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#row_hosting_plan a {
+    text-decoration: none;
+    color: #444444;
+}
+
+#hosting_plan a:focus {
+    border: 1px solid #339966;
+}
+
+.inner_hosting_plan {
+    width: 32%;
+    text-decoration: none;
+    padding: 0;
+}
+
+.inner_hosting_plan img {
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.inner_hosting_plan h4 {
+    font-weight: bold;
+    margin: 0;
+}
+
+.inner_hosting_plan p {
+    margin: 0;
+}
+
+.inner_hosting_plan p:nth-child(3) {
+    line-height: 40px;
+}
+
+.inner_hosting_plan p:last-child {
+    margin-bottom: 0;
+    color: #339966;
+}
+
+/*ホスティング詳細(main)ここまで*/
+
+/*メイン(main)ここまで*/
+
+/*リスティング作成(main)ここから*/
+
+#maka_listing {
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 450px;
+    padding-top: 100px;
+    padding-left: 5%;
+}
+
+#maka_listing h1 {
+    margin: 0;
+    color: white;
+    font-weight: bold;
+    font-size: 60px;
+    width: 500px;
+}
+
+#make_listing_btn {
+    background-color: #EEEEEE;
+    color: black;
+    border: none;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 4px;
+    padding: 15px 25px;
+    margin: 50px 0;
+}
+
+#make_listing_btn:active {
+    background-color: #DDDDDD;
+}
+
+/*リスティング作成(main)ここまで*/
+
+/*フッター(main)ここから*/
+
+footer {
+    width: 1050px;
+    margin: 100px auto 50px auto;
+}
+
+/*フッターリスト(main)ここから*/
+
+#footer_list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.footer_contents {
+    width: 25%;
+}
+
+.footer_contents h4 {
+    line-height: 30px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #444444;
+}
+
+.footer_contents ul {
+    padding-left: 0;
+}
+
+.footer_contents li {
+    font-weight: bolder;
+    list-style: none;
+    font-size: 14px;
+    padding: 0;
+    line-height: normal;
+}
+
+.footer_contents a {
+    color: #999999;
+    text-decoration: none;
+}
+
+.footer_contents a:hover {
+    border-bottom: 1px solid #999999;
+}
+
+/*フッターリスト(main)ここまで*/
+
+#footer_under {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#footer_left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#footer_left a {
+    color: gray;
+}
+
+#footer_left p {
+    font-weight: bold;
+    color: gray;
+    margin: 0;
+}
+
+#footer_right i+i {
+    margin-left: 20px;
+}
+
+#footer_left .fa-atlassian::before {
+    color: gray;
+    content: '\f77b';
+    /*これがあるとなぜか表示されない
+    font-family: "Font Awesome 5 Free";*/
+    font-weight: 900;
+}
+
+.footer_contents span {
+    color: white;
+    background-color: #005500;
+    font-size: 12px;
+    padding: 2px 3px;
+    border-radius: 4px;
+}
+
+.fa-facebook-f::before {
+    color: gray;
+    content: '\f39e';
+    font-family: 'Font Awesome 5 Free' font-weight:900;
+}
+
+.fa-twitte::before {
+    color: gray;
+    content: '\f099';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+.fa-instagram::before {
+    color: gray;
+    content: '\f16d';
+    font-family: 'Font Awesome 5 Free' font-weight:900;
+}
+
+/*フッター(main)ここまで*/
+
+@media screen and (max-width: 1127px) {
+    /*ヘッダーデザイン(1127)ここから
+    .header {
+        display: none;
+    }*/
+    .header {
+        background-color: transparent;
+        width: 100%;
+        display: block;
+        line-height: 3em;
+        padding: 0;
+        border: none;
+    }
+    .header-img {
+        width: 100%;
+        height: 100%;
+    }
+    #inner_hiden_title {
+        display: block;
+        padding-top: 200px;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+    #header_left {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+    #header_list {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        background-color: white;
+        border-bottom: 1px solid #DDDDDD;
+    }
+    #header_right {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        background-color: white;
+        width: 100%;
+        margin: 0;
+        padding-right: 40px;
+        text-align: right;
+    }
+    #inner_hiden_title h1 {
+        width: 75%;
+        text-align: left;
+        display: inline-block;
+        /*background-color: pink;*/
+        /*color: white;*/
+        font-weight: bold;
+        font-size: 40px;
+        margin: 0 auto;
+        /*文字をわかりやすくするため縁取る*/
+        -webkit-text-fill-color: white;
+        ;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+    }
+    /*applicationここから*/
+    .application {
+        position: static;
+        width: 70%;
+        margin: 0 auto;
+        padding: 30px 0;
+    }
+    #title {
+        display: none;
+    }
+    #immobility {
+        width: 100%;
+    }
+    /*application(1127) ここまで*/
+    /*ヘッダー(1127)ここまで*/
+    /*メイン(1127)ここから*/
+    main {
+        width: 690px;
+        margin: 0 auto;
+    }
+    /*イントロ(1127)ここから*/
+    #introduction {
+        display: flex;
+        flex-direction: column;
+    }
+    .inner_intro {
+        width: 500px;
+        margin: 0 auto;
+    }
+    .inner_intro:last-child {
+        margin-left: auto;
+    }
+    /*イントロ(1127)ここまで*/
+    /*メインコンテンツ(1127)ここから*/
+    .main_contents h1 {
+        font-size: 40px;
+    }
+
+    .elements {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #step01 .elements,#step03 .elements, #step05 .elements {
+        margin: 0 auto;
+        width: 500px;
+    }
+    /*メインコンテンツ(1127)ここまで*/
+    /*3ステップで簡単ホスティング(1127)ここから*/
+    .check_point .fa-check {
+        border: 1.5px solid #444444;
+        padding: 17px 15px;
+        border-radius: 50%;
+    }
+    .check_point {
+        width: 100%;
+        margin: 0;
+    }
+    .check_point:nth-child(2) {
+        margin: 30px 0;
+    }
+    /*3ステップで簡単ホスティング(1127)ここまで*/
+    /*安全保障(1127)ここから*/
+    .step02_inner {
+        width: 100%;
+    }
+
+    #guarantee_list {
+        padding-top: 15px;
+    }
+    #guarantee_list  ul {
+     padding-left: 0;
+    }
+    /*安全保障(1127)ここまで*/
+    /*数字(1127)ここから*/
+    .number h2 {
+        font-size: 40px;
+    }
+    /*数字(1127)ここまで*/
+    /*Airbnbについて(1127)ここから*/
+    .about_airbnb {
+        width: 100%;
+    }
+    .about_airbnb {
+        margin: 0;
+    }
+    .about_airbnb+.about_airbnb {
+        margin-left: 0;
+    }
+    /*Airbnbについて(1127)ここまで*/
+    /*インタビュー(1127)ここから*/
+    .interview_img {
+        height: 400px;
+    }
+    .coment {
+        width: 300px;
+    }
+    .font_yellow {
+        font-size: 60px;
+        line-height: 1em;
+        letter-spacing: -5px;
+    }
+    .inner_coment p {
+        font-size: 20px;
+    }
+    .inner_coment span {
+        font-size: 15px;
+        color: #999999;
+    }
+    /*インタビュー(1127)ここまで*/
+    /*よくある質問(1127)ここから*/
+    #question_list {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    #question_list li {
+        width: 80%;
+        margin: 0 10%;
+        padding: 25px 0;
+    }
+    #question_list a {
+        font-size: 15px;
+    }
+    /*よくある質問(1127)ここまで*/
+    /*ホスティング詳細(1127)ここから*/
+    .inner_hosting_plan img {
+        height: 125px;
+        border-radius: 5px 5px 0 0;
+    }
+    #row_hosting_plan {
+        width: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #row_hosting_plan a {
+        text-decoration: none;
+    }
+    #hosting_plan a:focus {
+        border: 1px solid #339966;
+    }
+    .inner_hosting_plan {
+        box-shadow: 0 0 8px #999999;
+        border-radius: 5px;
+    }
+    .inner_hosting_plan h4 {
+        font-size: 15px;
+        padding-left: 10px;
+        margin: 0;
+        line-height: normal;
+    }
+    .inner_hosting_plan p {
+        font-size: 13px;
+        padding-left: 10px;
+        padding-bottom: 10px;
+        margin: 0;
+    }
+    .inner_hosting_plan p:nth-child(3) {
+        line-height: normal;
+    }
+    .inner_hosting_plan p:last-child {
+        display: none;
+    }
+    /*ホスティング詳細(1127)ここまで*/
+    /*メイン(1127)ここまで*/
+    /*リスティング作成(1127)ここから*/
+    #maka_listing {
+        padding-left: 13%;
+    }
+    #maka_listing h1 {
+        font-size: 40px;
+        width: 300px;
+    }
+    #make_listing_btn {
+        margin: 20px 0;
+    }
+    /*リスティング作成(1127)ここまで*/
+    /*フッター(1127)ここから*/
+    footer {
+        width: 90%;
+        margin: 100px auto 50px auto;
+    }
+    /*フッター(1127)ここまで*/
+}
+
+@media screen and (max-width: 743px) {
+    /*ヘッダー(743)ここから*/
+    #inner_hiden_title {
+        padding-top: 100px;
+    }
+    #inner_hiden_title h1 {
+        width: 95%;
+        text-align: left;
+        font-size: 35px;
+    }
+    #header_right {
+        background-color: transparent;
+    }
+    /*application(743)ここから*/
+    .application {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .application input {
+        font-weight: bold;
+        height: 35px;
+        padding-left: 13px;
+        margin: 5px 0;
+    }
+    .application select {
+        height: 35px;
+        font-size: 15px;
+        padding-left: 10px;
+    }
+    #details {
+        display: flex;
+        flex-direction: column;
+    }
+    #select_share {
+        margin: 5px 0;
+        width: 100%;
+    }
+    #select_guest_number {
+        width: 100%;
+        margin: 5px 0;
+    }
+    /*application(743)ここまで*/
+    /*ヘッダー(743)ここまで*/
+    /*メイン(743)ここから*/
+    main {
+        width: 90%;
+        margin: 0 auto;
+    }
+    /*イントロ(743)ここから*/
+    .inner_intro {
+        width: 100%;
+    }
+    /*イントロ(743)ここまで*/
+    /*メインコンテンツ(743)ここから*/
+    .main_contents h1 {
+        text-align: left;
+    }
+    .main_contents h1:before {
+        -webkit-transform: tarnslateX(0);
+        transform: translateX(0);
+        left: 0;
+    }
+    .elements {
+        width: 100%;
+    }
+    /*メインコンテンツ(743)ここまで*/
+    /*数字(743)ここから*/
+    .number_elements {
+        text-align: left;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+    }
+    .number {
+        width: 100%;
+    }
+    /*数字(743)ここまで*/
+    /*インタビュー(743)ここから*/
+    .interview_img {
+        background-image: no-repeat center;
+        background-size: cover;
+        background-clip: content-box;
+        width: 100%;
+        height: 500px;
+    }
+    .coment {
+        text-align: left;
+        width: 100%;
+    }
+    .mass {
+        margin: 0;
+    }
+    .font_yellow {
+        margin-top: 30px;
+    }
+    /*
+    margin: 0;
+    display: inline-block;
+    font-family: 'Sawarabi Mincho', sans-serif;
+    color: #FFD700;
+    font-size: 150px;
+    line-height: 1em;
+    letter-spacing: -10px;
+    transform: rotateX(180deg);
+    transform: rotateZ(180deg);
+}*/
+    .inner_coment {
+        position: static;
+    }
+    .inner_coment p {
+        font-size: 15px;
+    }
+    .inner_coment span {
+        font-size: 15px;
+        color: #999999;
+    }
+    .inner_coment button {
+        margin: 20px 0;
+        background-color: white;
+        border: 2px solid black;
+        border-radius: 4px;
+        padding: 10px 15px;
+        font-weight: bold;
+    }
+    #img02 {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    #interview01 {
+        display: flex;
+        flex-direction: column;
+    }
+    #img03 {
+        background-image: no-repeat center;
+        background-size: cover;
+        background-clip: content-box;
+        width: 100%;
+        height: 100%;
+    }
+    #interview02 {
+        display: flex;
+        flex-direction: column;
+    }
+    #img04 {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    /*インタビュー(743)ここまで*/
+    /*よくある質問(1127)ここから*/
+    #question_list {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    #question_list li {
+        width: 100%;
+        margin: 0;
+    }
+    /*よくある質問(743)ここまで*/
+    /*ホスティング詳細(743)ここから*/
+    #row_hosting_plan {
+        flex-direction: column;
+    }
+    .inner_hosting_plan {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        margin: 10px 0;
+    }
+    .inner_hosting_plan img {
+        margin: 0;
+        width: 80px;
+        height: 80px;
+        border-radius: 0;
+    }
+    .inner_hosting_plan {
+        box-shadow: 0 0 3px #999999;
+        border-radius: 3px;
+    }
+    .inner_hosting_plan div {
+        margin: auto 0 auto 10px;
+    }
+    .inner_hosting_plan h4 {
+        padding: 0;
+        margin: 0;
+    }
+    .inner_hosting_plan p {
+        font-size: 13px;
+        padding: 0;
+        margin: 0;
+    }
+    /*ホスティング詳細(743)ここまで*/
+    /*メイン(743)ここまで*/
+    /*リスティング作成(743)ここから*/
+    #maka_listing {
+        height: 350px;
+        padding-left: 20px;
+        padding-top: 60px;
+    }
+    #maka_listing h1 {
+        width: 300px;
+    }
+    #make_listing_btn {
+        margin: 20px 0;
+    }
+    /*リスティング作成(743)ここまで*/
+    /*フッター(743)ここから*/
+    footer {
+        margin-top: 70px;
+    }
+    footer hr, #footer_list, #footer_right {
+        display: none;
+    }
+    /*フッター(743)ここまで*/
+}
